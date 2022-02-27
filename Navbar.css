@@ -1,0 +1,121 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: #43C0F6;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    z-index: 100;
+}
+
+.navbar .navbarLogo {
+    flex: 50%;
+    height: 160px;
+    position: relative;
+    bottom: 52px;
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.navbar .navbarLogo img {
+    width: 160px;
+}
+
+.navbar .navbarContainer {
+    padding: 10px;
+    flex: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    bottom: 4px;
+}
+
+.navbar .signInContainer {
+    padding: 10px;
+    flex: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: absolute;
+    right: 40px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.navbar .signInContainer .fa-solid {
+    margin: 0px;
+    padding: 2px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 16px;
+}
+
+.navbar .languageButton {
+    margin: 0px 18px;
+    ;
+    height: 28%;
+    display: inline-flex;
+    position: absolute;
+    top: 5px;
+}
+
+.navbar .nz {
+    margin: 3px;
+    cursor: pointer;
+}
+
+.navbar .rangatiratanga {
+    margin: 3px;
+    cursor: pointer;
+}
+
+.navbar .hiddenLinks {
+   position: absolute;
+   top: 15px;
+   
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar .navbarContainer a {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .navbar .rightSide button {
+        display: none;
+    }
+
+    .navbar .hiddenLinks {
+        display: none;
+    }
+}
+
+.navbar .navbarContainer .fa-solid {
+    color: white;
+    cursor: pointer;
+    
+}
+
+.navbar .button{
+    padding: 10px 10px;
+    font-size: 1.6rem;
+    flex: 100%;
+    display:inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
